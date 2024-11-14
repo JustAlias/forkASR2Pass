@@ -1,5 +1,5 @@
 # workdir is always websocket
-build=build  # the build dir
+build=/opt/ASR-2Pass/websocket/build  # the build dir
 
 # Build websocket service, with onnxruntime
 if [ ! -f $build/bin/funasr-wss-server-2pass ]; then
