@@ -12,6 +12,9 @@ RUN apt-get update && \
     libssl-dev \
     openssl \
     git \
+    sudo \
+    cmake \
+    build-essential \
     && apt-get clean
 
 # 使用 pip 安装 onnxruntime 和 websockets
@@ -30,7 +33,7 @@ WORKDIR /opt/ASR-2Pass
 RUN pip3 install -r requirements.txt
 
 # 暴露服务端口
-EXPOSE 10095
+EXPOSE 10095 10096 1337
 
 # 启动服务
 CMD ["bash", "./run_prepare_server.sh"]
