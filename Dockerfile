@@ -17,6 +17,9 @@ RUN apt-get update && \
 # 使用 pip 安装 onnxruntime 和 websockets
 RUN pip3 install onnxruntime websockets
 
+# 安装 PyTorch 相关库
+RUN pip3 install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu121
+
 # 克隆 ASR-2Pass 项目
 RUN git clone https://github.com/soloHeroo/ASR2Pass-docker.git /opt/ASR-2Pass
 
