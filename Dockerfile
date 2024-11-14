@@ -18,7 +18,7 @@ RUN apt-get update && \
 RUN pip3 install onnxruntime websockets
 
 # 克隆 ASR-2Pass 项目
-RUN git clone https://github.com/duj12/ASR-2Pass.git /opt/ASR-2Pass
+RUN git clone https://github.com/soloHeroo/ASR2Pass-docker.git /opt/ASR-2Pass
 
 # 设置工作目录
 WORKDIR /opt/ASR-2Pass
