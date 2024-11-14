@@ -1,3 +1,17 @@
+
+# 通过 Dockerfile 构建镜像
+
+下载Dockerfile到本地目录，执行
+```shell
+docker build -t asr-2pass-image .
+```
+
+# 运行 Docker 容器
+```shell
+docker run -d -p 10095:10095 --name asr-2pass-container asr-2pass-image
+```
+
+
 # 数据切分，转写，筛选流程
 ```shell
 src_dir=/path/to/your/src/audio/  # 原始需要清洗的长音频/长视频所在路径
