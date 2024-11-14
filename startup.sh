@@ -10,4 +10,4 @@ fi
 # 启动主要服务
 echo "Starting main services..."
 bash /opt/ASR-2Pass/run_server_2pass.sh &
-python3 /opt/ASR-2Pass/h5Server.py
+python3 /opt/ASR-2Pass/html/h5Server.py
