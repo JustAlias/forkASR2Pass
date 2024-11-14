@@ -42,7 +42,7 @@ quantize=true
 certfile="../ssl_key/server.crt"
 keyfile="../ssl_key/server.key"
 
-. ./parse_options.sh || exit 1;
+. /opt/ASR-2Pass/websocket/parse_options.sh || exit 1;
 
 
 $build/bin/funasr-wss-server-2pass  \
