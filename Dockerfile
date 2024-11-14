@@ -35,8 +35,5 @@ RUN pip3 install -r requirements.txt
 # 暴露服务端口
 EXPOSE 10095 10096 1337
 
-# 创建一个标记文件来检查是否已经完成初次设置
-RUN touch /opt/ASR-2Pass/.initialized
-
 # 启动脚本
 CMD ["bash", "/opt/ASR-2Pass/startup.sh"]
