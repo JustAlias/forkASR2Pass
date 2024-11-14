@@ -9,7 +9,11 @@ docker build -t asr-2pass-image .
 # 运行 Docker 容器
 ```shell
 docker run -d -p 10095:10095 --name asr-2pass-container asr-2pass-image
+or
+docker run -d -p 10095:10095 -p 10096:10096 -p 8088:1337 --volume "/d/models:/websocket/models" --name asr-2pass asr-2pass-image
 ```
+
+
 
 
 # 数据切分，转写，筛选流程
