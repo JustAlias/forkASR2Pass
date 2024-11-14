@@ -2,7 +2,7 @@
 
 下载Dockerfile到本地目录，执行
 ```shell
-docker build -t asr2pass-image .
+docker build --no-cache -t asr2pass-image .
 ```
 
 # 运行 Docker 容器
