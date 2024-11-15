@@ -17,8 +17,8 @@ RUN apt-get update && \
     build-essential \
     && apt-get clean
 
-# 使用 pip 安装 onnxruntime 和 websockets
-RUN pip3 install onnxruntime websockets
+# 使用 pip 安装 onnxruntime 和 websockets  和 flask
+RUN pip3 install onnxruntime websockets  flask
 
 # 安装 PyTorch 相关库
 RUN pip3 install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu121
